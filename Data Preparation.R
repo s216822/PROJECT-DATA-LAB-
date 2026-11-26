@@ -12,3 +12,8 @@ vars_list <- bdl::get_variables("P3244", lang="en")
 vars_to_get <- vars_list[vars_list$n1 %in% c("persons employed", 
                               "gross wages and salaries"),]
 vars_to_get
+
+raw_data <- bdl::get_data_by_variable(
+  varId = vars_to_get$id, 
+  lang = "en"
+)
