@@ -17,3 +17,5 @@ raw_data <- bdl::get_data_by_variable(
   varId = vars_to_get$id, 
   lang = "en"
 )
+
+saveRDS(raw_data, "raw_data.rds")
