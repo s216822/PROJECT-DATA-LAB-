@@ -11,3 +11,4 @@ options(bdl.api_private_key = my_api_key)
 vars_list <- bdl::get_variables("P3244", lang="en")
 vars_to_get <- vars_list[vars_list$n1 %in% c("persons employed", 
                               "gross wages and salaries"),]
+vars_to_get
