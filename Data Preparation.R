@@ -5,3 +5,8 @@
 # my_api_key <- "YOUR KEY HERE"
 
 # install.packages("bdl")
+
+library(bdl)
+options(bdl.api_private_key = my_api_key)
+vars_list <- bdl::get_variables("P3244", lang="en")
+vars_list
